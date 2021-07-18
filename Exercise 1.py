@@ -1,5 +1,4 @@
 import random
-import typing_extensions
 
 def greeting():
     name = input('What is your name? ')
