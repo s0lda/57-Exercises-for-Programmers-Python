@@ -12,6 +12,7 @@ def first_number():
             print('You need to provide a number greater or equal to 0.')
     return first
 
+
 def second_number():
     valid = False
     while valid == False:
@@ -25,6 +26,7 @@ def second_number():
         except ValueError:
             print('You need to provide a number greater or equal to 0.')
     return second
+
 
 first = first_number()
 second = second_number()
