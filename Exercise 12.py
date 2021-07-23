@@ -11,7 +11,7 @@ def user_input():
         except ValueError:
             print('You need to input a number.')
 
-# according to exercise interest * years + principal. No yearly apr
+# according to exercise interest * years + principal
 
 def simple_interest():
     print('What is the principal?')
