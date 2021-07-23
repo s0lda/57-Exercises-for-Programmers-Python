@@ -75,16 +75,10 @@ def run_calculator():
     area = 0
     if choice == 'rectangular':
         area = rectangular()
-        # paint = paint_amount(area)
-        # print(f'You will need to buy {paint} gallons of paint to cover {area} square feet.')
     elif choice == 'round':
         area = round()
-        # paint = paint_amount(area)
-        # print(f'You will need to buy {paint} gallons of paint to cover {area} square feet.')
     elif choice == 'lshape':
         area = lshape()
-        # paint = paint_amount(area)
-        # print(f'You will need to buy {paint} gallons of paint to cover {area} square feet.')
     paint = paint_amount(area)
     print(f'You will need to buy {paint} gallons of paint to cover {area} square feet.')
 
