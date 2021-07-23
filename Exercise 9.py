@@ -73,14 +73,23 @@ def run_calculator():
     print('All values need to be in feet.')
     choice = ceiling_type()
     area = 0
+    gallon = ''
+
     if choice == 'rectangular':
         area = rectangular()
     elif choice == 'round':
         area = round()
     elif choice == 'lshape':
         area = lshape()
+    
     paint = paint_amount(area)
-    print(f'You will need to buy {paint} gallons of paint to cover {area} square feet.')
+
+    if paint == 1:
+        gallon = 'gallon'
+    else:
+        gallon = 'gallons'
+
+    print(f'You will need to buy {paint} {gallon} of paint to cover {area} square feet.')
 
 if __name__ == '__main__':
     run_calculator()
