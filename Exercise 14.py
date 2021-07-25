@@ -33,14 +33,9 @@ def tax_calculator():
         # 5.5 % tax is exercise requirement
         tax = (order / 100) * 5.5
         total = order + tax
-        print(f'''
-The subtotal is ${order}
-The tax is ${tax}
-The total is ${total}''')
+        print(f'The subtotal is ${order}\nThe tax is ${tax}\nThe total is ${total}')
     else:
-        print(f'''
-The subtotal is ${order}
-The total is ${order}''')
+        print(f'The subtotal is ${order}\nThe total is ${order}')
 
 if __name__ == "__main__":
     tax_calculator()
