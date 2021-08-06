@@ -1,5 +1,3 @@
-import math
-
 def float_input() -> float:
     valid = False
     while valid == False:
@@ -14,7 +12,7 @@ def float_input() -> float:
             print('You need to input a number.')
 
 
-def string_input():
+def string_input() -> str:
     valid = False
     while valid == False:
         try:
@@ -58,7 +56,7 @@ def tax_calculator():
     else:
         print(f'The subtotal is ${order}\nThe total is ${order}')
     
-    total = math.ceil(order + tax)
+    total = round(order + tax, 2)
     if tax > 0:
         print(f'The subtotal is ${order}\nThe tax is ${tax}\nThe total is ${total}')
 
