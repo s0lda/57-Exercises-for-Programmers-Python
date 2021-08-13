@@ -49,6 +49,7 @@ def validator_output(password, validation):
     if validation > 0:
         print(f'The password {password} is a {output}.')
 
+
 if __name__ == '__main__':
     print('Please type in your password for validation.')
     password = user_input()
