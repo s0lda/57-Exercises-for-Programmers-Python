@@ -1,6 +1,3 @@
-from typing import final
-
-
 def user_input() -> str:
     valid = False
     while valid == False:
