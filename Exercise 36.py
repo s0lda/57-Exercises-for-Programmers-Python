@@ -1,4 +1,3 @@
-from os import name, stat
 import statistics
 
 with open('ex36.txt', 'r') as data:
