@@ -45,7 +45,7 @@ def run_list_of_names():
     sorting_names = sort_names(list_of_names)
     number_of_names = len(list_of_names)
 
-    with open(r'\ex41.txt', 'w') as outfile:
+    with open(r'file_directory\ex41.txt', 'w') as outfile:
         outfile.write(f'Total names: {number_of_names}.\n')
         for name in sorting_names:
             outfile.write('%s\n' % name)
