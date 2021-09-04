@@ -21,3 +21,4 @@ def file_word_counter(file_directory):
 
 if __name__ == '__main__':
     file_word_counter('ex46.txt')
+
