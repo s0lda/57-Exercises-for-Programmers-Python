@@ -16,4 +16,5 @@ for file in os.listdir(os.getcwd() + '\ex45'):
                         print(corrected)
                         with open(os.path.join(os.getcwd() + '\ex45\corrected.txt'), 'a') as f:
                             f.write(corrected)
+
 print(f'Number of corrections: {corrections}.')
