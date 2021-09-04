@@ -38,7 +38,6 @@ def write_json(new_data, filename= r'filedirectory\ex44.json'):
         data.seek(0)
         json.dump(file_data, data, indent= 4)
 
-
 def stock_manager():
     price = 0
     quantity = 0
