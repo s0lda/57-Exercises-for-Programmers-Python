@@ -9,10 +9,10 @@ def file_word_counter(file_directory):
                 up = {word: count}
                 word_count.update(up)
 
-
+    # sorting from highest to lowest occurency of a word
     sorted_word_count = dict(sorted(word_count.items(), key= lambda item: item[1], reverse= True))
 
-
+    # print number of words * '*' instead of just a number
     for key, value in sorted_word_count.items():
         if value > 0:
             star = value * '*'
