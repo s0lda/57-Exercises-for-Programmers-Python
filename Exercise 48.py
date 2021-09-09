@@ -1,4 +1,4 @@
-import requests
+import requests, json, os
 
 
 def user_input():
@@ -83,5 +83,12 @@ def check_weather(key):
 
 if __name__ == '__main__':
     # Free API key
-    key = '67317599f082cb5114ec799271dad2a9'
-    check_weather(key)
+    file_dir = os.path.dirname(__file__)
+
+    with open(f'{file_dir}\ex48config.json', 'r') as f:
+        f = json.load(f)
+        for key, value in f.items():
+            if key == 'key':
+                api_key = value
+
+    check_weather(api_key)
