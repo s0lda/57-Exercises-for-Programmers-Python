@@ -18,6 +18,7 @@ def shorten_url(url):
                         short = f'http://short.url/{str(short)}'
                         for lst in database:
                             if lst[1] != short:
+                                # counter set to 0. 
                                 new_web = [url, short, 0]
                                 database.append(new_web)
                                 short_valid = True
@@ -38,9 +39,11 @@ def check_url(short_url):
 def main():
     print('Please eneter your website:')
     website = input('>> ')
-    if check_url(website) == False:
+    check = check_url(website)
+    if check == False:
         shorten_url(website)
     else:
-        webbrowser.open(check_url(website))
+        webbrowser.open(check)
+
 
 main()
