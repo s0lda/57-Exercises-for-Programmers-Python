@@ -1,5 +1,6 @@
 import random, webbrowser
 
+# database = [full url, short url, counter for short url entries]
 database = [['https://docs.python.org/', 'http://short.url/12345', 0]]
 
 
