@@ -1,0 +1,14 @@
+{
+    "stock": [
+        {
+            "name": "test",
+            "price": "200",
+            "serial": "asljasld;knfads"
+        },
+        {
+            "name": "TV",
+            "price": "799",
+            "serial": "abc1234GFZ"
+        }
+    ]
+}
