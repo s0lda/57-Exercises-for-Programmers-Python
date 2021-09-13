@@ -1,7 +1,6 @@
 import json
 from Exercise52 import get_date_time
 
-# didn't set up web server
 
 def data_info():
     data = get_date_time()
