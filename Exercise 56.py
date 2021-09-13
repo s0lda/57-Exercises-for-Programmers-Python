@@ -1,4 +1,4 @@
-import json, os
+import json
 
 
 def int_input():
