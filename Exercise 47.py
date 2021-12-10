@@ -1,4 +1,4 @@
-import requests, json
+import requests
 
 def who_is_in_space(url):
     response = requests.get(url)
